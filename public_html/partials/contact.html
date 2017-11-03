@@ -1,0 +1,61 @@
+<div ng-include src="'partials/tpl/menu.html'"></div> 
+<section class="container contact">
+    <div id="contact-us" class="parallax">
+        <div class="">
+            <div class="row">
+                <div class="heading text-center col-sm-8 col-sm-offset-2 wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                    <h2 class="menu-item" style="color: #4DB0DB;">CONTACTEZ NOUS</h2>
+                    <p class="contact-description">Pour avoir plus de détails, veuillez nous contacter ...</p>
+                </div>
+            </div>
+            <div class="contact-form wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form id="main-contact-form" name="contact-form" method="post" action="#">
+                            <div class="row  wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" name="name" class="form-control" placeholder="Nom" required="required" autofocus>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" name="email" class="form-control" placeholder="Adresse Email" required="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="subject" class="form-control" placeholder="Objet" required="required">
+                            </div>
+                            <div class="form-group">
+                                <textarea  name="message" id="message" class="form-control" rows="4" placeholder="Entrez votre message" required="required"></textarea>
+                            </div>                        
+                            <div class="form-group">
+                                <button type="submit" class="btn-submit ">Envoyer</button>
+                            </div>
+                        </form>   
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+                            <p class="contact-description">
+                                <span class="service-offer-item">OBS INTERNATIONAL COMPANY</span> en abrégé <span class="service-offer-item"> OBSIC</span> est une 
+                                entreprise Camerounaise qui est née d’une vision de développement 
+                                durable.  Elle vise à apporter les technologies émergentes aux services des 
+                                entreprises, des particuliers, des services publiques et dans les campagnes 
+                                isolées.</p>
+                            <ul class="address">
+                                <li><span class="glyphicon glyphicon-map-marker blue"></span> <span class="service-offer-item">&nbsp; Direction Générale : </span> <span class="contact-item">&nbsp; Garoua (Boulevard du lamido)</span> </li>
+                                <li><span class="glyphicon glyphicon-phone-alt"></span> <span class="service-offer-item">&nbsp; Fixe: &nbsp;</span> <span class="contact-item">&nbsp; (+237) 243 644 980</span></li>
+                                <li><span class="glyphicon glyphicon-earphone"></span> <span class="service-offer-item">&nbsp; Téléphone: &nbsp;</span>  <span class="contact-item">&nbsp;(+237)696 522 480 / 670 503 807 / 663 355 764 </span></li>
+                                <li><i class="glyphicon glyphicon-home"></i> <span class="service-offer-item">&nbsp; B.P: &nbsp;</span>  142 Garoua </li>
+                                <li><i class="glyphicon glyphicon-envelope"></i> <span class="service-offer-item">&nbsp; Adresse Email:&nbsp;</span> <span class="contact-item">&nbsp;<a href="mailto:someone@yoursite.com"> info@obsic.com</a></span></li>
+                                <li><i class="glyphicon glyphicon-globe"></i> <span class="service-offer-item">&nbsp; Site:&nbsp;</span> <span class="contact-item">&nbsp;<a href="#">www.obsic.com</a></span> </li>
+                            </ul>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>        
+</section>
+<div ng-include src="'partials/tpl/footer.html'"></div> 
