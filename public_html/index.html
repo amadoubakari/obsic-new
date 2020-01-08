@@ -1,14 +1,22 @@
 <!DOCTYPE html> 
 <html lang="en" ng-app="obsicApp"> 
     <head> 
-        <title>OBSIC</title>             
+        <title>OBS International Company</title>             
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+        <link rel="shortcut icon" href="img/logo/logo.png" />
 
         <link rel="stylesheet" href="lib-css/bootstrap.min.css"  media="screen"/> 
-        <link rel="stylesheet" href="css/styles.css"  media="screen"/> 
+        <link rel="stylesheet" href="css/styles.css"  media="screen"/>
+        <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Gilda+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant|Cormorant+Garamond|Gilda+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cormorant|Cormorant+Garamond|Cormorant+Upright|Gilda+Display" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
 
-        <script src="js/libs/jquery-1.10.2.min.js"></script> 
+        <script src="js/libs/jquery-3.1.0.min.js"></script> 
         <script src="js/libs/bootstrap.min.js"></script>  
         <script src="js/libs/angular.min.js"></script>        
         <script src="js/libs/angular-route.min.js"></script> 
@@ -18,9 +26,22 @@
         <script src="js/js.js"></script> 
         <script src="js/controllers.js"></script> 
     </head> 
-    <body> 
-        <button onclick="topFunction()" id="myBtn" class="" title="Go to top">Top</button>
+    <body>         
+        <div ng-include src="'partials/tpl/menu.html'"></div> 
+		<div id="fb-root"></div>
+			<script>(function(d, s, id) {
+			  var js, fjs = d.getElementsByTagName(s)[0];
+			  if (d.getElementById(id)) return;
+			  js = d.createElement(s); js.id = id;
+			  js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.0';
+			  fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));</script>
+        <button onclick="topFunction()" id="myBtn" class="cd-top" title="Go to top">Top</button>
         <div ng-view>
-        </div> 
+        </div>
+
+        <div ng-include class="col-xs-12" src="'partials/tpl/footer.html'"></div>  
+        <div class="col-sm-12" ng-include src="'partials/tpl/sub-footer.html'"></div> 
+<!--		<div class="fb-comments" data-href="http://obsic.cm/#!/" data-width="250" data-numposts="5"></div>-->
     </body> 
 </html> 

@@ -7,6 +7,21 @@ and open the template in the editor.
     Created on : Oct 18, 2017, 1:53:26 AM
     Author     : AMADOU BAKARI
 */
+
+/*importation des librairies google pour le font*/
+
+@import url('https://fonts.googleapis.com/css?family=Buda:300|Cormorant+Infant');
+@font-face{
+    font-family: obsicfont;
+    src: url(../fonts/karlamont/Karla-Regular.ttf);
+    font-weight: 300;
+}
+@font-face{
+    font-family: obsicfontdesc;
+    src: url(../fonts/karlamont/Montserrat-Light.ttf);
+    font-weight: 100;
+
+}
 body{
     /*background-image: url(../img/bg/white_carbonfiber.png);*/
     background-color: #F2F2F2
@@ -39,6 +54,16 @@ ul li.active a.active-custom{
 
 /*le passage de la souris sur le nav element*/
 
+.menu-item{
+    /*font-family: 'Cormorant', serif;*/
+    font-family: obsicfontdesc, serif;
+    font-size: 14px;
+    font-style: normal;
+    text-shadow: none;
+}
+.custom-navbar{
+    padding-right: 50px;
+}
 div#example-navbar-collapse ul li.menu-item a{
     transition: all 0.3s ease-in-out;
 }
@@ -57,6 +82,7 @@ div#example-navbar-collapse ul li.menu-item a:focus
 .menu{
     padding-top: 25px;
     background-color: #fff;
+    box-shadow: 1px 1px 100px rgba(66, 139, 202, 0.5);
 }
 
 /*le logo*/ 
@@ -66,14 +92,37 @@ div#example-navbar-collapse ul li.menu-item a:focus
 
 /*services*/
 .galerie li a img{
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 220px;
+
 }
+/*Description des services que la société offre*/
+.service-description{
+    color: black;
+    opacity: 1;
+    font-size: 18px;
+    text-justify: auto;
+    /*font-family: 'Buda', cursive;*/
+    font-family: obsicfontdesc, sans-serif;
+    line-height: 2.5;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.service-title{
+    /*font-family: 'Cormorant Upright', serif;*/
+    font-family: obsicfontdesc;
+    font-size: 36px;
+    font-style: normal;
+    text-shadow: none;
+    color:rgba(66, 139, 202, 1);
+    padding: 20px;
+}
+
 ul.galerie li {
     /*border: 1px solid black;*/
     list-style: none;
     background-color: white;
-    border:1px solid rgba(66, 139, 202, 0.5);
+    /*border:1px solid rgba(66, 139, 202, 0.5);*/
     border-radius:5px;
     padding: 25px;
     /*box-shadow: 1px 1px 100px rgba(66, 139, 202, 0.5);*/
@@ -93,6 +142,7 @@ li a img.img-item:hover{
     background-color: black;
     color: white;
     transition: all .3s ease-in-out;
+    font-family: obsicfontdesc;
 }
 .footer-subcribe-button:hover,.footer-subcribe-button:focus{
     background-color: rgba(0, 0, 0, 0.5);
@@ -112,12 +162,16 @@ li a img.img-item:hover{
     padding-left: 15px
 
 }
+
+.footer-menu-item-text {
+    font-family: obsicfontdesc;
+}
 /*service*/
 .service-item {
     box-shadow: 1px 2px 5px rgba(0, 10, 78, 0.1);
     /*    padding: 5px;
     */
-    margin: 35px;
+    margin: 100px 50px 100px 50px;
 }
 
 .service-item-img {
@@ -125,7 +179,7 @@ li a img.img-item:hover{
 }
 .service-item-img:hover{
     /*opacity: 0.5;*/
-    box-shadow: 4px 4px 5px  rgba(66, 139, 202, 0.5);
+    box-shadow: 4px 4px 25px  rgba(66, 139, 202, 0.5);
 }
 .custom-carousel {
     background-color: white;
@@ -145,7 +199,8 @@ li a img.img-item:hover{
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 25px; /* Rounded corners */
-    background-image: url(../img/logo/logo1.png)
+    background-image: url(../img/logo/logo1.png);
+    font-family: obsicfontdesc;
 }
 
 #myBtn:hover {
@@ -166,10 +221,57 @@ div#myCarousel ol.carousel-indicators li:focus{
     background-color: red;
 }
 .partner-logo {
-    width: 100px;
-    height: 100px;
-    opacity: 0.8;
+    width: 75px;
+    height: 75px;
+    border-radius: 5px;
+    padding: 2px;
+    border: 1px solid rgba(0,0,0,0.1);
+}
 
+.footer ul li a img.partner-logo{
+    margin-left: 50px;
+}
+.footer ul li a img.partner-logo:hover{
+    box-shadow: 5px 5px 50px rgba(0,0,0,0.5);
+}
+
+.footer-partner{
+    /*font-family: 'Cormorant', serif;*/
+    font-family: obsicfontdesc, serif;
+    font-size: 22px;
+    font-style: normal;
+    text-shadow: none;
+    color: rgba(66, 139, 202, 1);
+}
+.footer-column-title{
+    /*font-family: 'Cormorant', serif;*/
+    font-family: obsicfontdesc, serif;
+    font-size: 20px;
+    font-style: normal;
+    text-shadow: none;
+    color: rgba(66, 139, 202, 1);
+}
+.footer-column-description{
+    /*font-family: 'Cormorant', serif;*/
+    font-family: obsicfontdesc, serif;
+    font-size: 14px;
+    font-style: normal;
+    text-shadow: none;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+div.footer-services-item ul li{
+    font-family: obsicfontdesc;
+    font-size: 14px;
+    font-style: normal;
+    text-shadow: none;
+    line-height: 1.5;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    padding-left: 5px;
 }
 /*************************
 **********Contact CSS*****
@@ -187,9 +289,30 @@ div#myCarousel ol.carousel-indicators li:focus{
 }
 
 #contact-us .heading {
-    padding-top: 95px;
+    padding-top: 92px;
+    padding-bottom: 50px;
 }
 
+
+.contact-description{
+    color: black;
+    font-family: obsicfontdesc;
+    font-size: 14px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.contact-item{
+    color: black;
+    font-family: obsicfontdesc;
+    font-size: 12px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.contact-glyphicon{
+    opacity: 0.5;
+}
 .form-control {
     background-color: transparent;
     border-color: rgba(255,255,255,.1);
@@ -237,20 +360,28 @@ ul.address {
     color: #fff;
     font-size: 18px;
     border:0;
-    border-radius: 10px;
-    background-color: rgba(66, 139, 202, 0.5);
+    border-radius: 0px;
+    background-color: rgba(66, 139, 202, 1);
     margin-top: 40px;
-    font-family: 'Josefin Slab', serif;
-}
+    font-family: obsicfontdesc;
+    transition: all 0.3s ease-in-out;
 
+}
+.btn-submit:hover{
+    background-color: rgba(66, 139, 202, 0.3);
+    color: rgba(0, 0, 0, 0.5);
+}
 .contact{
     background-color: white;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 input[type="text"],input[type="email"] {
     /*    width: 215px;
         padding: 5px 8px;*/
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgba(0,0,0,0.5);
     border: 1px solid rgba(0,0,0,0.1);
     background-color: #fff;
@@ -258,6 +389,7 @@ input[type="text"],input[type="email"] {
     -moz-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
+    font-family: obsicfontdesc;
     /*    background-image: -webkit-gradient(linear, 0% 0%, 0% 12%, from(#999), to(#fff));
         background-image: -moz-linear-gradient(0% 12% 90deg, #fff, #999);*/
 }
@@ -266,19 +398,14 @@ input[type="text"],input[type="email"] {
 div.form-group textarea {
     /*    width: 215px;
         padding: 5px 8px;*/
-    font-size: 1.2em;
+    font-size: 1em;
     color: rgba(0,0,0,0.5);
     border: 1px solid rgba(0,0,0,0.1);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
-}
-
-/*realisation*/
-.realisation-snapshot-img{
-    width: 300px;
-    height: 200px
+    font-family: obsicfontdesc;
 }
 
 /*introduction aux services*/
@@ -286,8 +413,8 @@ div.form-group textarea {
     /*border: 1px solid black;*/
     list-style: none;
     background-color: white;
-    border:1px solid rgba(66, 139, 202, 0.5);
-    border-radius:5px;
+    /*border:1px solid rgba(66, 139, 202, 0.5);*/
+    border-radius:10px;
     padding: 25px;
     transition: all 0.3s ease-in-out;
     text-align: center;
@@ -300,6 +427,54 @@ div.form-group textarea {
 .slide-carousel-title{
     color: rgba(66, 139, 202, 1);
     text-shadow: none;
+    font-family: obsicfontdesc;
+    font-size: 16px;
+}
+.slide-carousel-description{
+    text-shadow: none;
+    color: rgba(0, 0, 0, 1);
+    font-family: obsicfontdesc;
+    font-size: 14px;
+}
+
+.service-item-title{
+    color:rgba(66, 139, 202, 1);
+    font-family: obsicfont;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+
+}
+
+.service-item-title2{
+    /*color:rgba(66, 139, 202, 1);*/
+    color:rgba(0, 0, 0, 1);
+    font-family: obsicfontdesc;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.service-item-desc2{
+    /*color:rgba(66, 139, 202, 1);*/
+    color:rgba(0, 0, 0, 1);
+    font-family: obsicfontdesc;
+    font-size: 16px;
+    text-align: center;
+    text-height: max-size;
+    text-decoration: #79B7E8;
+    padding: 10px;
+
+}
+
+
+.service-offer-item{
+    font-size: 18px;
+    color:rgba(66, 139, 202, 1);
+    font-family: obsicfontdesc;
+    line-height: 2;
+    text-align: justify;
 }
 
 /*realisations*/ 
@@ -307,7 +482,8 @@ div.form-group textarea {
 .realisation-menu-item{
     border-right: 1px solid black;
     margin-right: 15px;
-    padding-left: 30px;    
+    padding-left: 30px;   
+    font-family: obsicfontdesc;
 }
 .realisation-menu-item:hover{
     color: #79B7E8;
@@ -340,24 +516,254 @@ div.form-group textarea {
 /*entete appercu realisation*/ 
 .realisation-snapshot-header{
     color: #79B7E8;
-    font-size: 20px;
-    font-family: 'Buda', cursive;
+    font-size: 14px;
+    font-family: obsicfontdesc;
 }
 
 .realisation-snapshot-footer{
     color: #79B7E8;
-    font-size: 20px;
-    font-family: 'Buda', cursive;
+    font-size: 14px;
+    font-family: obsicfontdesc;
 }
 
 
 .realisation-snapshot-body{
     color: black;
-    font-size: 20px;
-    font-family: 'Buda', cursive;
+    font-size: 14px;
+    font-family: obsicfontdesc;
 }
 
 .realisation-snapshot-img{
+    margin-top: 25px;
     width: 300px;
     height: 200px
+}
+
+/*logo*/
+.custom-navbar-brand{
+    padding-left: 100px;
+}
+
+/*page de gauche*/
+.right-sidebar{
+    background-color: white;
+    border-top:solid 5px rgba(66, 139, 202, 0.5);
+    padding:0 0 0 30px;
+    -webkit-box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+    box-shadow: 1px 1px 100px rgba(66, 139, 202, 0.5);
+    border-radius: 5px 5px;    
+    font-family: obsicfontdesc;
+    transition: all 0.2s ease-in-out;
+
+
+}
+
+.right-sidebar-2{
+    background-color: white;
+    border-top:solid 5px rgba(0, 0, 0, 0.5);
+    padding:0 0 0 30px;
+    -webkit-box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+    border-radius: 5px 5px;    
+    font-family: obsicfontdesc;
+    transition: all 0.2s ease-in-out;
+
+
+}
+.right-sidebar:hover{
+    background-color: white;
+    border-top:solid 5px rgba(66, 139, 202, 0.4);
+    box-shadow: 1px 1px 100px rgba(66, 139, 202, 0.5);
+    border-radius: 5px 5px;
+
+}
+
+/*************************
+*****Pricing Table CSS****
+**************************/
+.pricing-table {
+    text-align: center;
+}
+
+.single-table {
+    padding: 30px 20px 20px;
+    border:1px solid #028FCC;
+    background-color: white;
+}
+
+.single-table h3 {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.price span {
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.single-table ul {
+    list-style: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.single-table ul li {
+    line-height: 30px;
+}
+
+.single-table.featured {  
+    color: #fff;
+    background-color: #028FCC;
+}
+
+.single-table.featured h3 { 
+    color: #fff;
+}
+
+.single-table.featured .btn.btn-primary {
+    background-color: #fff;
+}
+/* ===============================
+15. Aside, sidebar
+================================ */
+
+aside{
+    position:relative;
+    margin-bottom:40px;
+}
+
+.sidebar-nav{
+    float:left;
+    width:100%;
+}
+
+.right-sidebar{
+    border-left:1px solid #f5f5f5;
+    padding:0 0 0 30px;
+    -webkit-box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+    box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+
+}
+
+
+.left-sidebar{
+    border-right:1px solid #f5f5f5;
+    padding:0 30px 0 0;
+    -webkit-box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+    box-shadow:inset 1px 0 0 0 rgba(0,0,0,.01);
+}
+
+
+.left-sidebar .widget h3, .left-sidebar .widget .widget-content{
+    padding-right:20px;
+}
+
+
+
+aside .widget {
+    margin-bottom:40px;
+}
+
+
+ul.cat, ul.recent, ul.folio-detail, ul.contact-info{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+ul.cat li, ul.recent li, ul.folio-detail li, ul.contact-info li{
+    margin:0 0 15px 0;
+    list-style:none;
+}
+
+ul.cat li a, ul.folio-detail li a{
+    color:#656565;
+}
+
+ul.folio-detail li label{
+    display:inline;
+    cursor:default;
+    color:#353535;
+    font-weight:bold;
+}
+
+.widget ul.recent li {
+    /*margin-bottom:20px;*/
+}
+
+ul.recent li h6 {
+    margin:0 0 10px 0;
+}
+
+ul.recent li h6 a{
+    color:#353535;
+    font-size:16px;
+    font-weight:600;
+}
+
+
+.widget ul.tags {
+    list-style:none;
+    margin:0;
+    margin-left: 0;
+    padding-left:0;
+}
+
+.widget ul.tags li {
+    margin:0 5px 15px 0;
+    display:inline-block;
+}
+
+
+.widget ul.tags li a {
+    background:#e6e6e6;
+    color:#333;
+    padding:5px 10px;
+}
+
+.widget ul.tags li a:hover {
+    text-decoration:none;
+    color:#fff;
+}
+
+/**
+==========================================================
++@Author : AMADOU BAKARI
++@Desc : Mise à jour des icônes sur la partie réalisation
++@Time : 12:53
++@Date : 05/01/2018
+==========================================================
+**/
+
+/**
+=========================================================
+Parie latérale du site
+=========================================================
+**/
+.widgetheading{
+    font-family: obsicfontdesc;
+    font-size: 16px;
+    color: rgba(66, 139, 202, 0.8);
+}.parallax {
+
+}
+
+.footer-line {
+    background-image: url(../img/bg/satinweave.png)
+}
+
+.footer-text {
+    padding-top: -100px;
+}
+
+.footer-bloc {
+    height: 100px;
+
 }

@@ -21,7 +21,11 @@ obsicApp.config(['$routeProvider', '$locationProvider',
                     controller: 'realisationCtrl'
                 }).
                 when('/contact', {
-                    templateUrl: 'partials/contact.html',
+                    templateUrl: 'partials/contact.html#contact-us',
+                    controller: 'obsicCtrl'
+                }).
+                when('/products', {
+                    templateUrl: 'partials/products.html',
                     controller: 'obsicCtrl'
                 }).
                 otherwise({templateUrl: 'partials/404.html'});
